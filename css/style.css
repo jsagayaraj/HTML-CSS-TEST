@@ -1,0 +1,252 @@
+
+
+/*Global style*/
+*{
+	margin: 0;
+	padding: 0;
+}
+*img{
+	width:100%;
+	display:block;
+}
+
+body{
+	font-family: Arial, Helvetica sans-serif;
+	font-size: 100%;
+}
+.container{
+	max-width: 1200px;
+	width:100%;	
+	min-height:1000px;
+	margin: 0 auto;
+}
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration:none;
+    color:inherit;
+    -webkit-transition: color .5s ease; /* Safari */
+    transition: color .5s ease;
+}
+button {
+  height: 38px;
+  background-color: #EF5B33;
+  border: 0;
+  padding: 0 20px;
+  color: #fff;
+  cursor: pointer;
+  margin-top:10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 50px;
+}
+
+button:hover {
+  background-color: #b92c07;
+}
+.clearfix{
+	clear:both;
+}
+/*HEADER*/
+header{
+	background: url(../img/images1.jpg)no-repeat 0 center;
+	height:768px;
+}
+header .social-media{
+	padding-top: 20px;
+	padding-right: 20px;
+}
+header .social-media ul li{
+	float:right;
+	display:inline-block;
+	padding-right: 15px;
+}
+header .logo{
+	padding-left:50px;
+	float:left;
+}
+header nav ul{
+	float:left;
+	width:400px;
+	padding-top:20px;
+	margin-left: 250px;
+}
+header nav ul li{
+	float:left;
+	display:inline-block;
+	padding-right: 30px; 
+}
+header nav ul li a{
+	color:#fff; 
+	font-size: 1.5em;
+	font-weight: bold;
+}
+header nav ul li a:hover{
+	color:#EF5B33; 
+	border-bottom: 2px solid #EF5B33;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+
+header .heading{
+	text-align: center; 
+    color: #fff;
+    padding-top: 150px;
+    width: 370px;
+    margin: 0 auto;
+    
+}
+header h2{
+	font-size: 3.5em;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+header p{
+	line-height: 25px;
+}
+
+/*SECTION*/
+section#section1{
+	margin:0;
+	padding:0;
+}
+section#section1 .column1, section#section1 .column2, section#section1 .column3, section#section1 .column4{
+	width:25%;
+	float:left;
+	text-align: center;
+	color:#fff;
+}
+section#section1 .column1{
+	background:url(../img/montain1.jpg) no-repeat center;
+	height:169px;
+
+}	
+section#section1 .column2{
+	background:url(../img/montain2.jpg) no-repeat center;
+	height:169px;
+}
+section#section1 .column3{
+	background:url(../img/montain3.jpg) no-repeat center;
+	height:169px;
+}
+section#section1 .column4{
+	background:url(../img/montain4.jpeg) no-repeat center;
+	height:169px;
+}
+
+section#section1 h3{
+	padding:50px 30px 10px 0;
+}
+section#section1 p{
+	font-size: 12px;
+	padding:0 20px;
+	
+}
+
+section#section2{
+	margin-top:20px;
+}
+section#section2 .column1, section#section2 .column2, section#section2 .column3, section#section2 .column4{
+	width:25%;
+	float:left;
+	color:#4c423a;
+}
+section#section2 h3, ul{
+	padding-left: 10px;
+}
+section#section2 ul{
+	margin-top: 10px;
+}
+section#section2 ul li{
+	padding-top: 10px;
+}
+
+footer{
+	background-color: #000;
+	height:80px;
+	margin-top: 20px;
+	color:silver;
+	text-align: center;
+	line-height: 80px;
+	vertical-align: middle;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+	header nav ul{
+		margin-left: 100px;
+	}
+
+	section#section1 .column1, section#section1 .column2, section#section1 .column3, section#section1 .column4{
+		width:50%;
+	}
+	
+	section h3 {
+   		padding: 55px 0px 11px 0;
+	}
+	section#section2 .column1, section#section2 .column2, section#section2 .column3, section#section2 .column4{
+		width:50%;
+	}
+}
+
+/*Telephone*/
+@media (max-width: 450px) {
+
+	header{
+		height:600px;
+		float:none;
+	}
+	
+	header nav ul{
+		padding-top: 10px;
+	    margin: 0;
+	    width: 100%;
+	    text-align: center;
+	}
+	header nav ul li{
+		float:none;
+		padding-right: 20px; 
+	}
+	header nav ul li a{
+		font-size: 1em;
+	}
+
+	header .heading{
+	padding-top: 90px;
+    width: 95%;
+    
+    }
+    header .heading h2{
+	font-size: 2.5em;
+    
+    }
+    section#section1 .column1, section#section1 .column2, section#section1 .column3, section#section1 .column4{
+    	float:none;
+		width:100%;
+	}
+	
+	section#section2 .column1, section#section2 .column2, section#section2 .column3, section#section2 .column4{
+		width:100%;
+		float:none;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 15px;
+    	padding-left: 10px;
+
+	}
+	section#section2 h3 {
+   		padding: 30px 0 0 0;
+	}
+
+	footer{
+		line-height: 26px;
+		vertical-align: baseline;
+
+	}
+	footer p{
+		padding:15px 50px;
+
+	}
+}
